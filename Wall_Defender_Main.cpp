@@ -128,7 +128,6 @@ int main() {
 	projectileHeavy.y = 0;
 	for (i = 0; i < maxEnemies; i++) {
 		enemy[i].onScreen = false;
-		enemy[i].dying = false;
 		enemy[i].x = 800;
 	}
 	

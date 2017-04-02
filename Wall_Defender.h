@@ -22,13 +22,13 @@ ALLEGRO_BITMAP *bmpEnemyB1 = NULL;
 ALLEGRO_BITMAP *bmpEnemyB2 = NULL;
 ALLEGRO_BITMAP *bmpEnemyBCurrent = NULL;
 
+//Structures
 struct Enemy {
 	int x;
 	int health;
 	int speed;
 	int type;
 	bool onScreen;
-	bool dying;
 };
 
 struct Projectile {
@@ -36,6 +36,7 @@ struct Projectile {
 	bool onScreen;
 };
 
+//Prototyping
 Projectile moveProjectile(Projectile toMove, bool heavy);
 Enemy genEnemy(void);
 bool checkHit(Projectile projectile, Enemy enemy);
