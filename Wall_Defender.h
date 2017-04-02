@@ -21,7 +21,6 @@ ALLEGRO_BITMAP *bmpEnemyACurrent = NULL;
 ALLEGRO_BITMAP *bmpEnemyB1 = NULL;
 ALLEGRO_BITMAP *bmpEnemyB2 = NULL;
 ALLEGRO_BITMAP *bmpEnemyBCurrent = NULL;
-//ALLEGRO_BITMAP *bmpEnemyC = NULL;
 
 struct Enemy {
 	int x;

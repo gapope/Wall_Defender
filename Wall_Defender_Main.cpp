@@ -5,7 +5,6 @@
 #include <allegro5/allegro_image.h>
 #include <allegro5/allegro_font.h>
 #include <allegro5/allegro_ttf.h>
-//#include <allegro5/allegro_primitives.h>
 #include "Wall_Defender.h"
 
 const int SCREEN_W = 800;
@@ -69,7 +68,6 @@ int main() {
 	bmpEnemyB1 = al_load_bitmap("Data/Images/enemyB1.png");
 	bmpEnemyB2 = al_load_bitmap("Data/Images/enemyB2.png");
 	bmpEnemyBCurrent = bmpEnemyB1;
-	//bmpEnemyC = al_load_bitmap("enemyC.bmp");
 
 	//Setting back colour
 	al_clear_to_color(al_map_rgb(255, 255, 255));
@@ -107,7 +105,6 @@ int main() {
 			ev.mouse.y >= 275 && ev.mouse.y <= 325) { //When start is clicked
 			start = true;
 		}
-		//wallHealth++;
 	}
 	
 	//General definitions
@@ -323,9 +320,6 @@ int main() {
 					else if (enemy[i].type == 1) {
 						al_draw_bitmap(bmpEnemyBCurrent, enemy[i].x, 600 - 90 , 0);
 					}
-					/*else if (enemy[i].type == 2) {
-						al_draw_bitmap(bmpEnemyC, enemy[i].x, enemy[i].y, 0);
-					}*/
 				}
 			}
  
