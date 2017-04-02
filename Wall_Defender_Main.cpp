@@ -29,6 +29,7 @@ int main() {
 	ALLEGRO_TIMER *timer = NULL;
 	ALLEGRO_KEYBOARD_STATE key_state;
 	ALLEGRO_MOUSE_STATE mouse_state;
+	
 	//Error checking
 	if (!al_init()) {
     	std::cerr << "failed to initialize allegro! "  << std::endl;
@@ -38,7 +39,7 @@ int main() {
    		std::cerr << "failed to initialize the keyboard! "  << std::endl;
 		return -1;
 	}
-	display = al_create_display(SCREEN_W, SCREEN_H);	
+	display = al_create_display(SCREEN_W, SCREEN_H); //Creating screen	
    	if (!display) {
       std::cerr << "failed to create display!" << std::endl;
      
@@ -398,9 +399,6 @@ Enemy genEnemy(void) {
 		newEnemy.speed = 5;
 		newEnemy.health = 1;
 	}
-	/*else if (newEnemy.type == 2) {
-		newEnemy.speed = 3;
-	}*/
 	
 	return newEnemy;
 }
